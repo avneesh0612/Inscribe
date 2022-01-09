@@ -5,9 +5,6 @@ import Head from "next/head";
 const Home: FC = () => {
   return (
     <div className="w-screen min-h-screen bg-[#070714]">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <h1 className="p-3 text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
         A DAO for Bloggers all around the world!
