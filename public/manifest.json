@@ -1,32 +1,32 @@
 {
-  "theme_color": "#000",
-  "background_color": "#fff",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
-  "name": "Next starter",
-  "short_name": "Next starter",
-  "description": "This is a boilerplate code with everything you need with nextjs",
-  "icons": [
-    {
-      "src": "/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "theme_color": "#595BF4",
+    "background_color": "#070714",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Inscribe",
+    "short_name": "Inscribe",
+    "description": "This is a DAO for bloggers.",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }

@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import "../styles/globals.css";
 import NextNProgress from "nextjs-progressbar";
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
+import { NextSeo } from "next-seo";
 
 const supportedChainIds = [4];
 
@@ -15,7 +16,32 @@ function MyApp({ Component, pageProps }: AppProps) {
       connectors={connectors}
       supportedChainIds={supportedChainIds}
     >
-      <NextNProgress color="#000" options={{ showSpinnner: false }} />
+      <NextSeo
+        title="Inscribe"
+        titleTemplate="Inscribe"
+        defaultTitle="Inscribe"
+        description="A DAO for bloggers all around the world!"
+        canonical="https://inscribe.vercel.app/"
+        openGraph={{
+          url: "https://inscribe.vercel.app/",
+          title: "Inscribe",
+          description: "A DAO for bloggers all around the world!",
+          images: [
+            // Add image TODO
+          ],
+          profile: {
+            firstName: "Avneesh",
+            gender: "Male",
+            lastName: "Agarwal",
+            username: "avneesh0612",
+          },
+        }}
+        twitter={{
+          handle: "@avneesh0612",
+          site: "@avneesh0612",
+          cardType: "summary_large_image",
+        }}
+      />
       <Component {...pageProps} />
     </ThirdwebWeb3Provider>
   );

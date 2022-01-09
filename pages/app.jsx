@@ -19,7 +19,6 @@ const voteModule = sdk.getVoteModule(
 
 const Home = () => {
   const { connectWallet, address, error, provider } = useWeb3();
-  console.log("👋 Address:", address);
   const signer = provider ? provider.getSigner() : undefined;
 
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
@@ -84,7 +83,6 @@ const Home = () => {
             })
           );
           setHasVoted(true);
-          console.log("successfully voted");
         } catch (err) {
           console.error("failed to execute votes", err);
         }
@@ -111,10 +109,8 @@ const Home = () => {
       .then(balance => {
         if (balance.gt(0)) {
           setHasClaimedNFT(true);
-          console.log("🌟 this user has a membership NFT!");
         } else {
           setHasClaimedNFT(false);
-          console.log("😭 this user doesn't have a membership NFT.");
         }
       })
       .catch(error => {
@@ -131,7 +127,6 @@ const Home = () => {
     bundleDropModule
       .getAllClaimerAddresses("0")
       .then(addresses => {
-        console.log("🚀 Members addresses", addresses);
         setMemberAddresses(addresses);
       })
       .catch(err => {
@@ -147,7 +142,6 @@ const Home = () => {
     tokenModule
       .getAllHolderBalances()
       .then(amounts => {
-        console.log("👜 Amounts", amounts);
         setMemberTokenAmounts(amounts);
       })
       .catch(err => {
@@ -163,7 +157,6 @@ const Home = () => {
       .getAll()
       .then(proposals => {
         setProposals(proposals);
-        console.log("🌈 Proposals:", proposals);
       })
       .catch(err => {
         console.error("failed to get proposals", err);
@@ -184,9 +177,7 @@ const Home = () => {
       .then(hasVoted => {
         setHasVoted(hasVoted);
         if (hasVoted) {
-          console.log("🥵 User has already voted");
         } else {
-          console.log("🙂 User has not voted yet");
         }
       })
       .catch(err => {
@@ -228,7 +219,6 @@ const Home = () => {
       .claim("0", 1)
       .then(() => {
         setHasClaimedNFT(true);
-        console.log();
       })
       .catch(err => {
         console.error("failed to claim", err);
