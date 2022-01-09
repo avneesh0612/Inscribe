@@ -12,6 +12,7 @@ module.exports = {
         pink: {
           400: "#FF3FF7",
         },
+        black: "#070714",
       },
     },
   },

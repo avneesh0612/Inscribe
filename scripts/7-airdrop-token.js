@@ -2,11 +2,11 @@ import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
 
 const bundleDropModule = sdk.getBundleDropModule(
-  "0x7133AEdFA4ff108f1C07071CD6A9A05f83c8FFa4"
+  "0x2e2040BB43ba63AE7E055f28C3F61F2eb9e7B6d4"
 );
 
 const tokenModule = sdk.getTokenModule(
-  "0xf9Fc07f0F786d8a4F6570B6aE90a14Bf13B3Da07"
+  "0x4833b336A4C0C61d0Ac35BcAb772bef7BEd86031"
 );
 
 (async () => {

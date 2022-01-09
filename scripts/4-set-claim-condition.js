@@ -1,7 +1,7 @@
 import sdk from "./1-initialize-sdk.js";
 
 const bundleDrop = sdk.getBundleDropModule(
-  "0x7133AEdFA4ff108f1C07071CD6A9A05f83c8FFa4"
+  "0x2e2040BB43ba63AE7E055f28C3F61F2eb9e7B6d4"
 );
 
 (async () => {

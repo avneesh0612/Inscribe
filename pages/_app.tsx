@@ -42,6 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
+      <NextNProgress color="#6D58F5" />
       <Component {...pageProps} />
     </ThirdwebWeb3Provider>
   );

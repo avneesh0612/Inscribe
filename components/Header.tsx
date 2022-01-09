@@ -24,7 +24,7 @@ const Header = () => {
         width={200}
         height={68}
         objectFit="contain"
-        alt="Bloggers DAO"
+        alt="Inscribe"
       />
       <div className="flex items-center ml-auto mr-20 space-x-4">
         {items.map((item, i) => (

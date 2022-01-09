@@ -1,14 +1,14 @@
 import sdk from "./1-initialize-sdk.js";
 
 const appModule = sdk.getAppModule(
-  "0x439d5df57d4D4C3f673029e06f673BCD52634ac2"
+  "0x9e00b9FCCf95aAAd10f9B0ea64AbB18E0ea4c0f5"
 );
 
 (async () => {
   try {
     const voteModule = await appModule.deployVoteModule({
-      name: "BloggersDAO's Epic Proposals",
-      votingTokenAddress: "0xf9Fc07f0F786d8a4F6570B6aE90a14Bf13B3Da07",
+      name: "Inscribe's Epic Proposals",
+      votingTokenAddress: "0x4833b336A4C0C61d0Ac35BcAb772bef7BEd86031",
       proposalStartWaitTimeInSeconds: 0,
       proposalVotingTimeInSeconds: 24 * 60 * 60,
       votingQuorumFraction: 0,

@@ -1,12 +1,12 @@
 import sdk from "./1-initialize-sdk.js";
 
-const app = sdk.getAppModule("0x439d5df57d4D4C3f673029e06f673BCD52634ac2");
+const app = sdk.getAppModule("0x9e00b9FCCf95aAAd10f9B0ea64AbB18E0ea4c0f5");
 
 (async () => {
   try {
     const tokenModule = await app.deployTokenModule({
-      name: "BloggersDAO Governance Token",
-      symbol: "HOKAGE",
+      name: "Inscribe Governance Token",
+      symbol: "INK",
     });
     console.log(
       "✅ Successfully deployed token module, address:",

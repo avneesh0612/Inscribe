@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
 
 const tokenModule = sdk.getTokenModule(
-  "0xf9Fc07f0F786d8a4F6570B6aE90a14Bf13B3Da07"
+  "0x4833b336A4C0C61d0Ac35BcAb772bef7BEd86031"
 );
 
 (async () => {

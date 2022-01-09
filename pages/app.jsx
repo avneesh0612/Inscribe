@@ -6,15 +6,15 @@ import { ethers } from "ethers";
 const sdk = new ThirdwebSDK("rinkeby");
 
 const bundleDropModule = sdk.getBundleDropModule(
-  "0x7133AEdFA4ff108f1C07071CD6A9A05f83c8FFa4"
+  "0x2e2040BB43ba63AE7E055f28C3F61F2eb9e7B6d4"
 );
 
 const tokenModule = sdk.getTokenModule(
-  "0xf9Fc07f0F786d8a4F6570B6aE90a14Bf13B3Da07"
+  "0x4833b336A4C0C61d0Ac35BcAb772bef7BEd86031"
 );
 
 const voteModule = sdk.getVoteModule(
-  "0x27638C45fb3D0De189aC059b6d3df5Cb874057EC"
+  "0x65C30844e5f263436EE6e88544cc24c5c0D1B1af"
 );
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
     return str.substring(0, 6) + "..." + str.substring(str.length - 4);
   };
 
-  const handleFormSubmit = async event => {
+  const handleFormSubmit = async e => {
     e.preventDefault();
     e.stopPropagation();
 
@@ -199,9 +199,9 @@ const Home = () => {
 
   if (!address) {
     return (
-      <div className="flex flex-col items-center justify-center w-screen h-screen bg-teal-600">
+      <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
         <h1 className="my-5 text-4xl font-semibold text-white">
-          Welcome to MyDao
+          Welcome to Inscribe
         </h1>
         <button
           onClick={() => connectWallet("injected")}
@@ -230,9 +230,9 @@ const Home = () => {
 
   if (hasClaimedNFT) {
     return (
-      <div className="flex flex-col items-center justify-center w-screen h-screen bg-teal-600">
+      <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
         <h1 className="my-5 text-4xl font-semibold text-white">
-          🍪DAO Member Page
+          🍪 Inscribe Member Page
         </h1>
         <p className="my-5 text-lg font-medium text-white">
           Congratulations on being a member
@@ -310,9 +310,9 @@ const Home = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen bg-teal-600">
+    <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
       <h1 className="my-5 text-4xl font-semibold text-white">
-        Mint your free 🍪DAO Membership NFT
+        Mint your free 🍪 Inscribe Membership NFT
       </h1>
       <button disabled={isClaiming} onClick={() => mintNft()}>
         {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
