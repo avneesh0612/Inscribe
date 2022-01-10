@@ -4,6 +4,6 @@
 
 @layer components {
   body {
-    @apply text-gray-100 bg-black;
+    @apply w-screen min-h-screen text-gray-100 bg-black;
   }
 }

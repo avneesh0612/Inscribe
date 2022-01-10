@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.6.0",
-    "@3rdweb/sdk": "^1.32.4",
+    "@3rdweb/sdk": "^1.32.5",
     "dotenv": "^10.0.0",
     "ethers": "^5.5.3",
     "next": "latest",
@@ -28,7 +28,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
+    "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@types/react": "^17.0.38",
     "@types/regenerator-runtime": "^0.13.1",
@@ -42,7 +42,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-tailwind": "^0.2.1",
-    "eslint-plugin-tailwindcss": "^3.1.0",
+    "eslint-plugin-tailwindcss": "^3.1.1",
     "husky": "^7.0.4",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",

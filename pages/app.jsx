@@ -1,7 +1,10 @@
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
-import { useEffect, useMemo, useState } from "react";
 import { ethers } from "ethers";
+import { useEffect, useMemo, useState } from "react";
+import MemberList from "../components/MemberList";
+import Proposal from "../components/Proposal";
+import SignIn from "../components/SignIn";
 
 const sdk = new ThirdwebSDK("rinkeby");
 
@@ -18,7 +21,7 @@ const voteModule = sdk.getVoteModule(
 );
 
 const Home = () => {
-  const { connectWallet, address, error, provider } = useWeb3();
+  const { address, provider } = useWeb3();
   const signer = provider ? provider.getSigner() : undefined;
 
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
@@ -29,14 +32,9 @@ const Home = () => {
   const [isVoting, setIsVoting] = useState(false);
   const [hasVoted, setHasVoted] = useState(false);
 
-  const shortenAddress = str => {
-    return str.substring(0, 6) + "..." + str.substring(str.length - 4);
-  };
-
   const handleFormSubmit = async e => {
     e.preventDefault();
     e.stopPropagation();
-
     setIsVoting(true);
 
     const votes = proposals.map(proposal => {
@@ -197,22 +195,6 @@ const Home = () => {
     });
   }, [memberAddresses, memberTokenAmounts]);
 
-  if (!address) {
-    return (
-      <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
-        <h1 className="my-5 text-4xl font-semibold text-white">
-          Welcome to Inscribe
-        </h1>
-        <button
-          onClick={() => connectWallet("injected")}
-          className="px-4 py-2 bg-yellow-500"
-        >
-          Connect your wallet
-        </button>
-      </div>
-    );
-  }
-
   const mintNft = () => {
     setIsClaiming(true);
     bundleDropModule
@@ -228,69 +210,39 @@ const Home = () => {
       });
   };
 
+  if (!address) {
+    return <SignIn />;
+  }
+
   if (hasClaimedNFT) {
     return (
       <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
-        <h1 className="my-5 text-4xl font-semibold text-white">
-          🍪 Inscribe Member Page
+        <h1 className="my-5 text-4xl font-semibold">
+          🍪{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
+            Inscribe Member Page
+          </span>
         </h1>
-        <p className="my-5 text-lg font-medium text-white">
+        <p className="my-5 text-lg font-medium">
           Congratulations on being a member
         </p>
+        <h2>You have minted our inclusive NFT</h2>
+
         <div className="flex space-x-10">
-          <div>
-            <h2>Member List</h2>
-            <table className="!p-4 rounded-lg text-black bg-white shadow-xl">
-              <thead>
-                <tr>
-                  <th>Address</th>
-                  <th>Token Amount</th>
-                </tr>
-              </thead>
-              <tbody>
-                {memberList.map(member => {
-                  return (
-                    <tr key={member.address}>
-                      <td>{shortenAddress(member.address)}</td>
-                      <td>{member.tokenAmount}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+          <MemberList memberList={memberList} />
           <div>
             <h2>Active Proposals</h2>
             <form onSubmit={handleFormSubmit}>
-              {proposals.map((proposal, index) => (
-                <div
+              {proposals.map(proposal => (
+                <Proposal
                   key={proposal.proposalId}
-                  className="!p-5 my-4 bg-white rounded-lg text-black w-[400px] flex flex-col"
-                >
-                  <h5>{proposal.description}</h5>
-                  <div className="flex justify-between mt-4">
-                    {proposal.votes.map(vote => (
-                      <div
-                        key={vote.type}
-                        className="flex items-center justify-center space-x-1"
-                      >
-                        <input
-                          type="radio"
-                          id={proposal.proposalId + "-" + vote.type}
-                          name={proposal.proposalId}
-                          value={vote.type}
-                          defaultChecked={vote.type === 2}
-                        />
-                        <label htmlFor={proposal.proposalId + "-" + vote.type}>
-                          {vote.label}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                  votes={proposal.votes}
+                  description={proposal.description}
+                  proposalId={proposal.proposalId}
+                />
               ))}
               <button
-                className={`w-full py-2 text-2xl text-center text-white bg-black rounded-full shadow-lg hover:opacity-90 ${
+                className={`w-full py-2 text-2xl text-center bg-black rounded-full shadow-lg hover:opacity-90 ${
                   isVoting && "cursor-wait"
                 } ${hasVoted && "cursor-not-allowed"}`}
                 disabled={isVoting || hasVoted}
@@ -311,10 +263,14 @@ const Home = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
-      <h1 className="my-5 text-4xl font-semibold text-white">
+      <h1 className="my-5 text-4xl font-semibold">
         Mint your free 🍪 Inscribe Membership NFT
       </h1>
-      <button disabled={isClaiming} onClick={() => mintNft()}>
+      <button
+        className="px-4 py-2 font-bold bg-blue-500 rounded hover:bg-blue-700"
+        disabled={isClaiming}
+        onClick={() => mintNft()}
+      >
         {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
       </button>
     </div>

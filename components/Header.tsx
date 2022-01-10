@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="top-0 flex items-center w-screen px-10 py-5">
+    <div className="fixed top-0 flex items-center w-screen px-10 py-5">
       <Image
         src="/logo.svg"
         width={200}
