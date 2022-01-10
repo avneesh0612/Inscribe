@@ -16,7 +16,7 @@
     "format:check": "prettier --check \"{components,content,docs,pages,styles,utils}/**/*.{js,jsx,ts,tsx,css,scss,json,yaml,md}\""
   },
   "dependencies": {
-    "@3rdweb/hooks": "^1.6.0",
+    "@3rdweb/hooks": "^1.8.0",
     "@3rdweb/sdk": "^1.32.5",
     "dotenv": "^10.0.0",
     "ethers": "^5.5.3",
