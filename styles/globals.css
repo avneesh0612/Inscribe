@@ -7,6 +7,6 @@
 
 @layer components {
   body {
-    @apply min-h-screen text-gray-100 bg-black w-[99vw] font-Montserrat max-w-[100vw] overflow-x-hidden;
+    @apply min-h-screen text-slate-200 bg-black w-[99vw] font-Montserrat max-w-[100vw] overflow-x-hidden;
   }
 }

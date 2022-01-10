@@ -1,25 +1,34 @@
 import { FC } from "react";
+import Feature from "../components/Feature";
 import Header from "../components/Header";
-import Link from "next/link";
+import HeroHome from "../components/HeroHome";
 
 const Home: FC = () => {
   return (
-    <div className="flex flex-col items-center w-screen min-h-screen pt-40 bg-black">
+    <div className="flex flex-col items-center w-screen min-h-screen pb-40 bg-black">
       <Header />
-      <div className="flex flex-col items-center justify-center w-screen">
-        <p className="text-gray-200">Inscribe DAO</p>
-        <h1 className="pb-2 text-5xl font-extrabold font-Ubuntu text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
-          A DAO for Bloggers all around the world!
+      <HeroHome />
+
+      <div className="relative flex flex-col items-center w-screen mb-40">
+        <div className="absolute top-0 rounded-full mr-52 bg-pink-400/20 w-80 h-72 blur-2xl"></div>
+        <div className="absolute top-0 rounded-full ml-52 bg-blue-400/20 w-80 h-72 blur-2xl"></div>
+        <h1 className="z-30 mt-32 text-5xl font-bold text-white font-Ubuntu">
+          With Inscribe you can:
         </h1>
-        <p className="mt-4">
-          Inscribe let&apos;s you share ideas and write articles with your
-          friends.
-        </p>
-        <Link href="/app">
-          <a className="px-4 py-2 mt-4 text-white border-2 border-gray-200 rounded-full">
-            Join Now
-          </a>
-        </Link>
+        <div className="flex items-center justify-center w-full mt-20 space-x-10">
+          <Feature
+            icon="/INK.svg"
+            description="Trade INK our own crypto currency"
+          />
+          <Feature
+            icon="/INK.svg"
+            description="Trade INK our own crypto currency"
+          />
+          <Feature
+            icon="/INK.svg"
+            description="Trade INK our own crypto currency"
+          />
+        </div>
       </div>
     </div>
   );

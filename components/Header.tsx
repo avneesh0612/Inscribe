@@ -1,7 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [animateHeader, setAnimatedHeader] = useState(false);
+
+  useEffect(() => {
+    const listener = () => {
+      if (window.scrollY > 50) {
+        setAnimatedHeader(true);
+      } else setAnimatedHeader(false);
+    };
+    window.addEventListener("scroll", listener);
+
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  }, []);
+
   const items = [
     {
       title: "Home",
@@ -18,7 +34,11 @@ const Header = () => {
   ];
 
   return (
-    <div className="fixed top-0 flex items-center w-screen px-10 py-5">
+    <nav
+      className={`
+    ${animateHeader ? "bg-white/5 backdrop-blur-3xl py-5" : ""} 
+    fixed top-0 flex items-center w-screen px-10 py-2 shadow-xl duration-100`}
+    >
       <Image
         src="/logo.svg"
         width={200}
@@ -41,7 +61,7 @@ const Header = () => {
           App
         </a>
       </Link>
-    </div>
+    </nav>
   );
 };
 
