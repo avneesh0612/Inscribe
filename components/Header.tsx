@@ -18,25 +18,10 @@ const Header = () => {
     };
   }, []);
 
-  const items = [
-    {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
-  ];
-
   return (
     <nav
       className={`
-    ${animateHeader ? "bg-white/5 backdrop-blur-3xl py-5" : ""} 
+    ${animateHeader ? "bg-white/5 backdrop-blur-3xl py-4" : ""} 
     fixed top-0 flex items-center w-screen px-10 py-2 shadow-xl duration-100`}
     >
       <Image
@@ -47,13 +32,23 @@ const Header = () => {
         alt="Inscribe"
       />
       <div className="flex items-center ml-auto mr-20 space-x-4">
-        {items.map((item, i) => (
-          <Link href={item.href} key={i}>
-            <a className="text-lg font-medium text-gray-100 hover:underline">
-              {item.title}
-            </a>
-          </Link>
-        ))}
+        <Link href="/">
+          <a className="text-lg font-medium text-gray-100 hover:underline">
+            Home
+          </a>
+        </Link>
+        <a
+          href="https://blog.avneesh.tech/inscribe"
+          className="text-lg font-medium text-gray-100 hover:underline"
+        >
+          About
+        </a>
+        <a
+          href="https://discord.gg/UFfwQWY7eV"
+          className="text-lg font-medium text-gray-100 hover:underline"
+        >
+          Discord
+        </a>
       </div>
 
       <Link href="/app">

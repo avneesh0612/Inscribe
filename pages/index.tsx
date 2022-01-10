@@ -21,12 +21,12 @@ const Home: FC = () => {
             description="Trade INK our own crypto currency"
           />
           <Feature
-            icon="/INK.svg"
-            description="Trade INK our own crypto currency"
+            icon="/Vote.svg"
+            description="Take part in the DAOs voting and Polls"
           />
           <Feature
-            icon="/INK.svg"
-            description="Trade INK our own crypto currency"
+            icon="/NFT.svg"
+            description="Get access to the inclusive community with an NFT"
           />
         </div>
       </div>
