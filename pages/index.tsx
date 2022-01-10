@@ -8,7 +8,7 @@ const Home: FC = () => {
       <Header />
       <div className="flex flex-col items-center justify-center w-screen">
         <p className="text-gray-200">Inscribe DAO</p>
-        <h1 className="pb-2 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
+        <h1 className="pb-2 text-5xl font-extrabold font-Ubuntu text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
           A DAO for Bloggers all around the world!
         </h1>
         <p className="mt-4">

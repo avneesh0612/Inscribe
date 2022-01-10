@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+         Montserrat: ["Montserrat", "sans-serif"],
+         Ubuntu: ["Ubuntu", "sans-serif"],
+      },
       colors: {
         blue: {
           400: "#3761F4",
@@ -29,8 +33,7 @@ module.exports = {
             transform: "rotate(-3deg)",
           },
         },
-      },
-    },
+      },    },
   },
   plugins: [],
 };

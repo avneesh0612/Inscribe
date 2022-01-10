@@ -3,8 +3,10 @@ import { ThirdwebSDK } from "@3rdweb/sdk";
 import { ethers } from "ethers";
 import { useEffect, useMemo, useState } from "react";
 import MemberList from "../components/MemberList";
+import NFTCard from "../components/NFTCard";
 import Proposal from "../components/Proposal";
 import SignIn from "../components/SignIn";
+import { UnsupportedChainIdError } from "@web3-react/core";
 
 const sdk = new ThirdwebSDK("rinkeby");
 
@@ -21,7 +23,7 @@ const voteModule = sdk.getVoteModule(
 );
 
 const Home = () => {
-  const { address, provider } = useWeb3();
+  const { address, provider, error } = useWeb3();
   const signer = provider ? provider.getSigner() : undefined;
 
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
@@ -195,6 +197,20 @@ const Home = () => {
     });
   }, [memberAddresses, memberTokenAmounts]);
 
+  if (error instanceof UnsupportedChainIdError) {
+    return (
+      <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-black">
+        <h2 className="text-4xl font-semibold font-Ubuntu">
+          Please connect to Rinkeby
+        </h2>
+        <p className="mt-3">
+          This dapp only works on the Rinkeby network, please switch networks in
+          your connected wallet.
+        </p>
+      </div>
+    );
+  }
+
   const mintNft = () => {
     setIsClaiming(true);
     bundleDropModule
@@ -216,8 +232,8 @@ const Home = () => {
 
   if (hasClaimedNFT) {
     return (
-      <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
-        <h1 className="my-5 text-4xl font-semibold">
+      <div className="flex flex-col items-center w-screen min-h-screen bg-black">
+        <h1 className="my-5 text-4xl font-semibold font-Ubuntu">
           🍪{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
             Inscribe Member Page
@@ -227,6 +243,7 @@ const Home = () => {
           Congratulations on being a member
         </p>
         <h2>You have minted our inclusive NFT</h2>
+        <NFTCard />
 
         <div className="flex space-x-10">
           <MemberList memberList={memberList} />
@@ -262,7 +279,7 @@ const Home = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen bg-black">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-black">
       <h1 className="my-5 text-4xl font-semibold">
         Mint your free 🍪 Inscribe Membership NFT
       </h1>
