@@ -7,6 +7,7 @@ import NFTCard from "../components/NFTCard";
 import Proposal from "../components/Proposal";
 import SignIn from "../components/SignIn";
 import { UnsupportedChainIdError } from "@web3-react/core";
+import Header from "../components/Header";
 
 const sdk = new ThirdwebSDK("rinkeby");
 
@@ -199,7 +200,8 @@ const Home = () => {
 
   if (error instanceof UnsupportedChainIdError) {
     return (
-      <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-black">
+      <div className="flex flex-col items-center justify-center w-screen min-h-screen">
+        <Header />
         <h2 className="text-4xl font-semibold font-Ubuntu">
           Please connect to Rinkeby
         </h2>
@@ -232,9 +234,10 @@ const Home = () => {
 
   if (hasClaimedNFT) {
     return (
-      <div className="flex flex-col items-center w-screen min-h-screen bg-black">
+      <div className="flex flex-col items-center w-screen min-h-screen pt-20">
+        <Header />
         <h1 className="my-5 text-4xl font-semibold font-Ubuntu">
-          🍪{" "}
+          ✒️{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
             Inscribe Member Page
           </span>
@@ -259,7 +262,7 @@ const Home = () => {
                 />
               ))}
               <button
-                className={`w-full py-2 text-2xl text-center bg-black rounded-full shadow-lg hover:opacity-90 ${
+                className={`w-full py-2 text-2xl text-center rounded-full shadow-lg hover:opacity-90 ${
                   isVoting && "cursor-wait"
                 } ${hasVoted && "cursor-not-allowed"}`}
                 disabled={isVoting || hasVoted}
@@ -279,17 +282,23 @@ const Home = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen bg-black">
-      <h1 className="my-5 text-4xl font-semibold">
-        Mint your free 🍪 Inscribe Membership NFT
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen">
+      <Header />
+
+      <h1 className="my-5 text-4xl font-semibold font-Ubuntu">
+        Mint your free ✒️ Inscribe Membership NFT
       </h1>
-      <button
-        className="px-4 py-2 font-bold bg-blue-500 rounded hover:bg-blue-700"
+      <div
         disabled={isClaiming}
         onClick={() => mintNft()}
+        className="relative mt-5 group"
       >
-        {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
-      </button>
+        <div className="absolute rounded-lg opacity-75 -inset-1 bg-gradient-to-r from-pink-400 to-blue-400 filter group-hover:opacity-100 blur backdrop-blur-lg animate-tilt"></div>
+
+        <button className="relative px-6 py-3 text-2xl font-medium rounded-lg">
+          {isClaiming ? "Minting..." : "Mint your NFT"}
+        </button>
+      </div>
     </div>
   );
 };

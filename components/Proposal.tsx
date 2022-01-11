@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { VoteType } from "../types/VoteType";
 
 interface Props {
@@ -6,7 +7,7 @@ interface Props {
   proposalId: string;
 }
 
-const Proposal: React.FC<Props> = ({ description, votes, proposalId }) => {
+const Proposal: FC<Props> = ({ description, votes, proposalId }) => {
   return (
     <div className="!p-5 my-4 bg-white rounded-lg text-black w-[400px] flex flex-col">
       <h5>{description}</h5>

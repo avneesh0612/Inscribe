@@ -1,15 +1,16 @@
 import { FC } from "react";
 import Feature from "../components/Feature";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeroHome from "../components/HeroHome";
 
 const Home: FC = () => {
   return (
-    <div className="flex flex-col items-center w-screen min-h-screen pb-40 bg-black">
+    <div className="flex flex-col items-center w-screen min-h-screen">
       <Header />
       <HeroHome />
 
-      <div className="relative flex flex-col items-center w-screen mb-40">
+      <div className="relative flex flex-col items-center w-screen">
         <div className="absolute top-0 rounded-full mr-52 bg-pink-400/20 w-80 h-72 blur-2xl"></div>
         <div className="absolute top-0 rounded-full ml-52 bg-blue-400/20 w-80 h-72 blur-2xl"></div>
         <h1 className="z-30 mt-32 text-5xl font-bold text-white font-Ubuntu">
@@ -30,6 +31,7 @@ const Home: FC = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

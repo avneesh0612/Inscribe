@@ -1,10 +1,11 @@
+import { FC } from "react";
 import { MemberType } from "../types/MemberType";
 
 interface Props {
   memberList: MemberType[];
 }
 
-const MemberList: React.FC<Props> = ({ memberList }) => {
+const MemberList: FC<Props> = ({ memberList }) => {
   const shortenAddress = (str: string) => {
     return str.substring(0, 6) + "..." + str.substring(str.length - 4);
   };

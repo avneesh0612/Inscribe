@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { FC } from "react";
 
 interface Props {
   icon: string;
   description: string;
 }
 
-const Features: React.FC<Props> = ({ icon, description }) => {
+const Features: FC<Props> = ({ icon, description }) => {
   return (
     <div className="flex flex-col items-center">
       <Image

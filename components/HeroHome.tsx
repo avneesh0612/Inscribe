@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { FC } from "react";
 
-const HeroHome: React.FC = () => {
+const HeroHome: FC = () => {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen">
       <div className="absolute rounded-full bg-pink-400/30 w-96 h-96 top-20 -right-40 blur-2xl"></div>

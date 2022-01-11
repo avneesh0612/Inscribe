@@ -24,13 +24,17 @@ const Header = () => {
     ${animateHeader ? "bg-white/5 backdrop-blur-3xl py-4" : ""} 
     fixed top-0 flex items-center w-screen px-10 py-2 shadow-xl duration-100`}
     >
-      <Image
-        src="/logo.svg"
-        width={200}
-        height={68}
-        objectFit="contain"
-        alt="Inscribe"
-      />
+      <Link passHref href="/">
+        <Image
+          src="/logo.svg"
+          width={200}
+          height={68}
+          objectFit="contain"
+          alt="Inscribe"
+          className="cursor-pointer"
+        />
+      </Link>
+
       <div className="flex items-center ml-auto mr-20 space-x-4">
         <Link href="/">
           <a className="text-lg font-medium text-gray-100 hover:underline">
@@ -42,12 +46,6 @@ const Header = () => {
           className="text-lg font-medium text-gray-100 hover:underline"
         >
           About
-        </a>
-        <a
-          href="https://discord.gg/UFfwQWY7eV"
-          className="text-lg font-medium text-gray-100 hover:underline"
-        >
-          Discord
         </a>
       </div>
 
