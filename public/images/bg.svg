@@ -1,0 +1,25 @@
+<svg width="1728" height="1117" viewBox="0 0 1728 1117" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_23_34)">
+        <rect width="1728" height="1117" fill="#070714" />
+        <line x1="0.5" x2="0.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+        <line x1="222.5" x2="222.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+        <line x1="0.00115741" y1="-0.499999" x2="1728" y2="3.50001" stroke="white" stroke-opacity="0.08" />
+        <line x1="0.00115741" y1="170.5" x2="1728" y2="174.5" stroke="white" stroke-opacity="0.08" />
+        <line x1="0.00115741" y1="341.5" x2="1728" y2="345.5" stroke="white" stroke-opacity="0.08" />
+        <line x1="0.00115741" y1="512.5" x2="1728" y2="516.5" stroke="white" stroke-opacity="0.08" />
+        <line x1="0.00115741" y1="683.5" x2="1728" y2="687.5" stroke="white" stroke-opacity="0.08" />
+        <line x1="0.00115741" y1="854.5" x2="1728" y2="858.5" stroke="white" stroke-opacity="0.08" />
+        <line x1="0.00115741" y1="1025.5" x2="1728" y2="1029.5" stroke="white" stroke-opacity="0.08" />
+        <line x1="444.5" x2="444.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+        <line x1="666.5" x2="666.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+        <line x1="888.5" x2="888.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+        <line x1="1110.5" x2="1110.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+        <line x1="1332.5" x2="1332.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+        <line x1="1543.5" x2="1543.5" y2="1117" stroke="white" stroke-opacity="0.08" />
+    </g>
+    <defs>
+        <clipPath id="clip0_23_34">
+            <rect width="1728" height="1117" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
