@@ -10,13 +10,13 @@ const Home: FC = () => {
       <Header />
       <HeroHome />
 
-      <div className="relative flex flex-col items-center w-screen">
+      <div className="relative flex flex-col items-center w-screen mt-14 md:mt-0">
         <div className="absolute top-0 rounded-full mr-52 bg-pink-400/20 md:w-80 md:h-72 blur-2xl"></div>
         <div className="absolute top-0 rounded-full ml-52 bg-blue-400/20 md:w-80 md:h-72 blur-2xl"></div>
-        <h1 className="z-30 mt-32 text-2xl font-bold text-white md:text-5xl font-Ubuntu">
+        <h1 className="z-30 mt-32 text-2xl font-bold text-white mt- md:text-5xl font-Ubuntu">
           With Inscribe you can:
         </h1>
-        <div className="flex flex-wrap items-center justify-center w-full mt-20 space-x-10">
+        <div className="flex flex-wrap items-center justify-center w-full mt-20 space-y-5 md:space-x-10">
           <Feature
             icon="/images/INK.svg"
             description="Trade INK, our own crypto currency"

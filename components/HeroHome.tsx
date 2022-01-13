@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const HeroHome: FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
+    <div className="flex flex-col items-center justify-center w-screen pt-40 md:pt-0 md:h-screen">
       <div className="absolute rounded-full bg-pink-400/30 md:w-96 md:h-96 top-20 -right-40 blur-2xl"></div>
       <div className="absolute rounded-full bg-blue-400/30 md:w-96 md:h-96 bottom-14 -left-40 blur-2xl"></div>
       <p className="text-slate-400">Inscribe DAO</p>

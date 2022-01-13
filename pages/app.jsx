@@ -218,7 +218,7 @@ const Home = () => {
     return (
       <div className="flex flex-col items-center w-screen min-h-screen pt-32">
         <Header />
-        <h1 className="my-5 text-4xl font-semibold font-Ubuntu">
+        <h1 className="my-5 text-3xl font-semibold text-center md:text-4xl font-Ubuntu">
           ✒️{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
             Inscribe Member Page
@@ -230,10 +230,10 @@ const Home = () => {
         {/* <h2>You have minted our inclusive NFT</h2>
         <NFTCard /> */}
 
-        <div className="flex space-x-10">
+        <div className="flex flex-col space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
           <MemberList memberList={memberList} />
           <div>
-            <h2>Active Proposals</h2>
+            <h2 className="text-lg font-medium">Active Proposals</h2>
             <form onSubmit={handleFormSubmit}>
               {proposals.map(proposal => (
                 <Proposal
@@ -243,19 +243,27 @@ const Home = () => {
                   proposalId={proposal.proposalId}
                 />
               ))}
-              <button
-                className={`w-full py-2 text-2xl text-center rounded-full shadow-lg hover:opacity-90 ${
-                  isVoting && "cursor-wait"
-                } ${hasVoted && "cursor-not-allowed"}`}
-                disabled={isVoting || hasVoted}
-                type="submit"
+
+              <div
+                onClick={() => connectWallet("injected")}
+                className="relative mt-5 group"
               >
-                {isVoting
-                  ? "Voting..."
-                  : hasVoted
-                  ? "You Already Voted"
-                  : "Submit Votes"}
-              </button>
+                <div className="absolute rounded-lg opacity-75 -inset-1 bg-gradient-to-r from-pink-400 to-blue-400 filter group-hover:opacity-100 blur backdrop-blur-lg animate-tilt"></div>
+
+                <button
+                  type="submit"
+                  disabled={isVoting || hasVoted}
+                  className={`relative w-full py-3 text-lg font-medium bg-black rounded-lg md:text-2xl
+                     isVoting && "cursor-wait"
+                } ${hasVoted && "cursor-not-allowed"}`}
+                >
+                  {isVoting
+                    ? "Voting..."
+                    : hasVoted
+                    ? "You Already Voted"
+                    : "Submit Votes"}
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -267,7 +275,7 @@ const Home = () => {
     <div className="flex flex-col items-center justify-center w-screen min-h-screen">
       <Header />
 
-      <h1 className="my-5 text-4xl font-semibold font-Ubuntu">
+      <h1 className="my-5 text-2xl font-semibold text-center md:text-4xl font-Ubuntu">
         Mint your free ✒️ Inscribe Membership NFT
       </h1>
       <div

@@ -9,8 +9,8 @@ interface Props {
 
 const Proposal: FC<Props> = ({ description, votes, proposalId }) => {
   return (
-    <div className="!p-5 my-4 bg-white rounded-lg text-black w-[400px] flex flex-col">
-      <h5>{description}</h5>
+    <div className="!p-5 my-5 bg-gradient-to-tr from-pink-400 to-blue-400 rounded-lg w-[400px] flex flex-col">
+      <h5 className="break-words">{description}</h5>
       <div className="flex justify-between mt-4">
         {votes.map(vote => (
           <div
