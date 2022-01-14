@@ -3,7 +3,7 @@
 
 ### Bug Fixes
 
-* faling build ([6481e7d](https://github.com/avneesh0612/Inscribe/commit/6481e7d253e7549fc27f6d2045d0db4d5c169138))
+* failing build ([6481e7d](https://github.com/avneesh0612/Inscribe/commit/6481e7d253e7549fc27f6d2045d0db4d5c169138))
 
 
 ### Features

@@ -253,7 +253,7 @@ const Home = () => {
                 <button
                   type="submit"
                   disabled={isVoting || hasVoted}
-                  className={`relative w-full py-3 text-lg font-medium bg-black rounded-lg md:text-2xl
+                  className={`relative w-full py-3 px-10 text-lg font-medium bg-black rounded-lg md:text-2xl
                      isVoting && "cursor-wait"
                 } ${hasVoted && "cursor-not-allowed"}`}
                 >

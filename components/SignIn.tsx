@@ -1,5 +1,6 @@
 import { useWeb3 } from "@3rdweb/hooks";
 import Header from "./Header";
+import Image from "next/image";
 
 const SignIn = () => {
   const { connectWallet } = useWeb3();
@@ -18,7 +19,13 @@ const SignIn = () => {
       >
         <div className="absolute rounded-lg opacity-75 -inset-1 bg-gradient-to-r from-pink-400 to-blue-400 filter group-hover:opacity-100 blur backdrop-blur-lg animate-tilt"></div>
 
-        <button className="relative px-6 py-3 text-lg font-medium bg-black rounded-lg md:text-2xl">
+        <button className="relative flex items-center px-6 py-3 space-x-3 text-lg font-medium bg-black rounded-lg md:text-2xl">
+          <Image
+            width={50}
+            height={50}
+            src="/images/Metamask.svg"
+            alt="Metamask"
+          />
           Sign in using metamask
         </button>
       </div>
