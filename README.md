@@ -1,42 +1,47 @@
-# Next.js + TypeScript + TailwindCSS and ESLint Starter Template
+<h1 align="center">Welcome to Inscribe 👋</h1>
+<p>
+  <a href="https://github.com/avneesh0612/Inscribe/blob/main/LICENSE" target="_blank">
+    <img alt="License: GPL--3.0" src="https://img.shields.io/badge/License-GPL--3.0-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/avneesh0612" target="_blank">
+    <img alt="Twitter: avneesh0612" src="https://img.shields.io/twitter/follow/avneesh0612.svg?style=social" />
+  </a>
+</p>
 
-This is a simple and minimalistic Next.js, TypeScript, TailwindCSS and ESLint template with all the starter files and dependencies already setup and ready for you to use. 
+> A DAO for Bloggers all around the world!
 
-**List of modules and libraries pre-installed in this template**:
-- next
-- tailwindcss
-- postcss
-- autoprefixer
-- typescript 
-- eslint
-- next-pwa
+### 🏠 [Homepage](https://inscribe.vercel.app/)
 
-**next**: The core library required for the functioning of Next.js. <br>
-**tailwindcss**: The main library required for TailwindCSS along with **postcss** and **autoprefixer**. <br>
-**typescript**: Library which enables us to use TypeScript. <br>
-**eslint**: Library useful for setting up ESLint in our project. <br>
-**next-pwa**: A Library used for making working PWA's(Progressive Web App's) easily in Next.js.
+## Install
 
-# How and when to use this template
+```sh
+yarn install
+```
 
-There are many developers who would like to have a stable workflow comprising of Next.js, TypeScript, TailwindCSS and ESLint which makes their coding a lot easier. This template is tailor-made for those developers. Installing all of these libraries on its own is a pain and time consuming. With this template, with a few steps that take a lot less time you are able to setup your workflow. 
+## Usage
 
-Now, how to use this template. This template is publicly available for you to use [here](https://github.com/avneesh0612/next-starter). You can click on **Use this template** which allows you to create a duplicate repository with the same files but in your GitHub account.
+```sh
+yarn dev
+```
 
-Proceeding further, you need to clone the repo locally to use it in your projects. You can do this via **git** or using the **zip file**. 
+## Author
 
-Now you have succesfully incorporated the starter template into your workflow! 🥳
+👤 **Avneesh Agarwal**
 
-# Contributing Guide
-In case of any contributions to this template, please make sure that your pull requests follow these basic rules:
-- Please ensure that your pr's(Pull Requests) are relatable and applicable to the base intention of this template.
-- Pr's can be in the form of any optimizations / better practices within the template.
-- Please refrain from adding unnecessary features and over-engineering the template. Keep it simple.
-- Making changes that are not applicable to the template will not be accepted.
-- Improving the documentation will also be appreciated <br>
-Hoping for optimal cooperation from contributors.
+* Website: https://www.avneesh.tech/
+* Twitter: [@avneesh0612](https://twitter.com/avneesh0612)
+* Github: [@avneesh0612](https://github.com/avneesh0612)
+* LinkedIn: [@avneesh0612](https://linkedin.com/in/avneesh0612)
 
-Before using this template, we suggest you to have a quick look at the [CODE_OF_CONDUCT.md](https://github.com/avneesh0612/next-starter/blob/main/CODE_OF_CONDUCT.md) and [CHANGELOG.md](https://github.com/avneesh0612/next-starter/blob/main/CHANGELOG.md)
+## 🤝 Contributing
 
-# License
-[GNU General Public License](https://github.com/avneesh0612/next-starter/blob/main/LICENSE) © 2021 [Avneesh Agarwal](https://github.com/avneesh0612)
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/avneesh0612/Inscribe/issues). 
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2022 [Avneesh Agarwal](https://github.com/avneesh0612).<br />
+This project is [GPL-3.0](https://github.com/avneesh0612/Inscribe/blob/main/LICENSE) licensed.
