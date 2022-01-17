@@ -33,7 +33,7 @@
     "@types/react": "^17.0.38",
     "@types/regenerator-runtime": "^0.13.1",
     "autoprefixer": "^10.4.2",
-    "eslint": "^8.6.0",
+    "eslint": "^8.7.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
