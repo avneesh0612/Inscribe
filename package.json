@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.8.0",
-    "@3rdweb/sdk": "^1.34.2",
+    "@3rdweb/sdk": "^1.36.0",
     "dotenv": "^11.0.0",
     "ethers": "^5.5.3",
     "next": "latest",
