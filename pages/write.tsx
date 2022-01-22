@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { supabase } from "../utils/supabaseClient";
 
-const write = () => {
+const Write = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-
-  // add blog to supabase
 
   const upload = async () => {
     const { data, error } = await supabase
@@ -34,4 +32,4 @@ const write = () => {
   );
 };
 
-export default write;
+export default Write;
