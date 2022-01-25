@@ -18,11 +18,13 @@ const Write = () => {
       <h1>Write</h1>
       <input
         type="text"
+        placeholder="Title"
         value={title}
         onChange={e => setTitle(e.target.value)}
         className="text-black"
       />
       <textarea
+        placeholder="Content"
         value={content}
         onChange={e => setContent(e.target.value)}
         className="text-black"
