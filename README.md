@@ -10,7 +10,7 @@
 
 > A DAO for Bloggers all around the world!
 
-### 🏠 [Homepage](https://inscribe.vercel.app/)
+### 🏠 [Homepage](http://inscribedao.me/)
 
 ## Install
 

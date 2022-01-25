@@ -11,9 +11,7 @@ const HeroHome: FC = () => {
         A DAO for Bloggers all around the world!
       </h1>
       <p className="w-5/6 mt-4 text-center md:w-2/5 text-slate-300">
-        Inscribe let&apos;s you share ideas and write articles with your
-        friends. You get to read articles from other people! You also get an
-        inclusive NFT.
+        A platform to connect with like-minded people
       </p>
       <Link href="/app">
         <a className="px-4 py-2 mt-4 text-lg text-white border-2 rounded-full border-slate-400 hover:bg-gradient-to-r from-pink-400/70 to-blue-400">

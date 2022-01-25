@@ -29,8 +29,8 @@ const Header: FC<Props> = ({}) => {
 
   return (
     <nav
-      className={`bg-black fixed top-0 flex items-center border-b-2 border-white/10 w-screen px-4 md:px-10 py-4 shadow-xl duration-100
-    ${animateHeader ? "bg-white/5 backdrop-blur-3xl border-transparent" : ""}`}
+      className={`bg-black fixed top-0 flex items-center border-b-2 border-white/10 w-screen px-4 md:px-10 py-4  duration-100
+    ${animateHeader ? "py-6 shadow-xl bg-black/5 backdrop-blur-xl" : ""}`}
     >
       <Link passHref href="/">
         <Logo className="w-40 h-12 cursor-pointer md:ml-4 md:h-14 md:w-44" />

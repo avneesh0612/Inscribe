@@ -21,13 +21,18 @@ function MyApp({ Component, pageProps }: AppProps) {
         titleTemplate="Inscribe"
         defaultTitle="Inscribe"
         description="A DAO for bloggers all around the world!"
-        canonical="https://inscribe.vercel.app/"
+        canonical="http://inscribedao.me/"
         openGraph={{
-          url: "https://inscribe.vercel.app/",
+          url: "http://inscribedao.me/",
           title: "Inscribe",
           description: "A DAO for bloggers all around the world!",
           images: [
-            // Add image TODO
+            {
+              url: "https://www.inscribedao.me/og-image.png",
+              width: 800,
+              height: 420,
+              alt: "Inscribe",
+            },
           ],
           profile: {
             firstName: "Avneesh",
