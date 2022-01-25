@@ -216,11 +216,11 @@ const Home = () => {
 
   if (hasClaimedNFT) {
     return (
-      <div className="flex flex-col items-center w-screen min-h-screen pt-32">
+      <div className="flex min-h-screen w-screen flex-col items-center pt-32">
         <Header />
-        <h1 className="my-5 text-3xl font-semibold text-center md:text-4xl font-Ubuntu">
+        <h1 className="my-5 text-center font-Ubuntu text-3xl font-semibold md:text-4xl">
           ✒️{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400">
+          <span className="bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">
             Inscribe Member Page
           </span>
         </h1>
@@ -230,7 +230,7 @@ const Home = () => {
         {/* <h2>You have minted our inclusive NFT</h2>
         <NFTCard /> */}
 
-        <div className="flex flex-col space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
+        <div className="flex flex-col space-y-10 md:flex-row md:space-x-10 md:space-y-0">
           <MemberList memberList={memberList} />
           <div>
             <h2 className="text-lg font-medium">Active Proposals</h2>
@@ -246,16 +246,16 @@ const Home = () => {
 
               <div
                 onClick={() => connectWallet("injected")}
-                className="relative mt-5 group"
+                className="group relative mt-5"
               >
-                <div className="absolute rounded-lg opacity-75 -inset-1 bg-gradient-to-r from-pink-400 to-blue-400 filter group-hover:opacity-100 blur backdrop-blur-lg animate-tilt"></div>
+                <div className="absolute -inset-1 animate-tilt rounded-lg bg-gradient-to-r from-pink-400 to-blue-400 opacity-75 blur filter backdrop-blur-lg group-hover:opacity-100"></div>
 
                 <button
                   type="submit"
                   disabled={isVoting || hasVoted}
-                  className={`relative w-full py-3 px-10 text-lg font-medium bg-black rounded-lg md:text-2xl
-                     isVoting && "cursor-wait"
-                } ${hasVoted && "cursor-not-allowed"}`}
+                  className={`isVoting && "cursor-wait" } relative w-full rounded-lg bg-black py-3
+                     px-10 text-lg font-medium
+                md:text-2xl ${hasVoted && "cursor-not-allowed"}`}
                 >
                   {isVoting
                     ? "Voting..."
@@ -272,20 +272,20 @@ const Home = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen">
+    <div className="flex min-h-screen w-screen flex-col items-center justify-center">
       <Header />
 
-      <h1 className="my-5 text-2xl font-semibold text-center md:text-4xl font-Ubuntu">
+      <h1 className="my-5 text-center font-Ubuntu text-2xl font-semibold md:text-4xl">
         Mint your free ✒️ Inscribe Membership NFT
       </h1>
       <div
         disabled={isClaiming}
         onClick={() => mintNft()}
-        className="relative mt-5 group"
+        className="group relative mt-5"
       >
-        <div className="absolute rounded-lg opacity-75 -inset-1 bg-gradient-to-r from-pink-400 to-blue-400 filter group-hover:opacity-100 blur backdrop-blur-lg animate-tilt"></div>
+        <div className="absolute -inset-1 animate-tilt rounded-lg bg-gradient-to-r from-pink-400 to-blue-400 opacity-75 blur filter backdrop-blur-lg group-hover:opacity-100"></div>
 
-        <button className="relative px-6 py-3 text-2xl font-medium rounded-lg">
+        <button className="relative rounded-lg px-6 py-3 text-2xl font-medium">
           {isClaiming ? "Minting..." : "Mint your NFT"}
         </button>
       </div>

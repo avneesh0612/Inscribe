@@ -14,10 +14,10 @@ const Features: FC<Props> = ({ icon, description }) => {
         alt="icon"
         width={50}
         height={50}
-        className="w-16 h-16 mb-4"
+        className="mb-4 h-16 w-16"
       />
 
-      <p className="mt-2 text-lg text-center w-52 text-slate-400">
+      <p className="mt-2 w-52 text-center text-lg text-slate-400">
         {description}
       </p>
     </div>

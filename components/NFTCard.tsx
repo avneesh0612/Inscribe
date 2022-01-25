@@ -3,8 +3,8 @@ import { EthereumIcon, InscribeIcon } from "./Icons";
 
 const NFTCard = () => {
   return (
-    <div className="flex items-center justify-center p-3 space-x-4 bg-white rounded-lg shadow-xl">
-      <InscribeIcon className="w-32 h-32" />
+    <div className="flex items-center justify-center space-x-4 rounded-lg bg-white p-3 shadow-xl">
+      <InscribeIcon className="h-32 w-32" />
       <div>
         <h2 className="text-3xl font-bold text-black ">
           Inscribe Membership NFT
@@ -15,12 +15,12 @@ const NFTCard = () => {
           platform 🔓Unlock our &quot;early access lounge&quot; discord channel
           with our team 🔮
         </p>
-        <div className="flex items-center justify-between w-full px-4">
+        <div className="flex w-full items-center justify-between px-4">
           <a
-            className="relative bg-gray-400 rounded-full w-14 h-14"
+            className="relative h-14 w-14 rounded-full bg-gray-400"
             href="https://ethereum.org/"
           >
-            <EthereumIcon className="w-8 h-11 " />
+            <EthereumIcon className="h-11 w-8 " />
           </a>
 
           <a href="https://testnets.opensea.io/0x2e2040BB43ba63AE7E055f28C3F61F2eb9e7B6d4/0">

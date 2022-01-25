@@ -29,14 +29,14 @@ const Header: FC<Props> = ({}) => {
 
   return (
     <nav
-      className={`bg-black fixed top-0 flex items-center border-b-2 border-white/10 w-screen px-4 md:px-10 py-4  duration-100
-    ${animateHeader ? "py-6 shadow-xl bg-black/5 backdrop-blur-xl" : ""}`}
+      className={`fixed top-0 flex w-screen items-center border-b-2 border-white/10 bg-black px-4 py-4 duration-100  md:px-10
+    ${animateHeader ? "bg-black/5 py-6 shadow-xl backdrop-blur-xl" : ""}`}
     >
       <Link passHref href="/">
-        <Logo className="w-40 h-12 cursor-pointer md:ml-4 md:h-14 md:w-44" />
+        <Logo className="h-12 w-40 cursor-pointer md:ml-4 md:h-14 md:w-44" />
       </Link>
 
-      <div className="flex items-center ml-auto space-x-4">
+      <div className="ml-auto flex items-center space-x-4">
         <a
           href="https://blog.avneesh.tech/inscribe"
           className="text-lg font-medium hover:underline"
@@ -44,14 +44,14 @@ const Header: FC<Props> = ({}) => {
           About
         </a>
         {address && (
-          <p className="hidden px-4 py-2 text-lg font-medium border-2 rounded-full md:flex border-slate-300">
+          <p className="hidden rounded-full border-2 border-slate-300 px-4 py-2 text-lg font-medium md:flex">
             {shortenAddress(address)}
           </p>
         )}
       </div>
 
       <Link href="/app">
-        <a className="px-8 py-2 ml-4 text-lg font-medium border-2 rounded-full md:ml-20 border-slate-300">
+        <a className="ml-4 rounded-full border-2 border-slate-300 px-8 py-2 text-lg font-medium md:ml-20">
           App
         </a>
       </Link>

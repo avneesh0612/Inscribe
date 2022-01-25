@@ -6,20 +6,20 @@ const SignIn = () => {
   const { connectWallet } = useWeb3();
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
-      <div className="absolute rounded-full bg-pink-400/30 md:w-96 md:h-96 top-20 -right-40 blur-2xl"></div>
-      <div className="absolute rounded-full bg-blue-400/30 md:w-96 md:h-96 bottom-14 -left-40 blur-2xl"></div>
+    <div className="flex h-screen w-screen flex-col items-center justify-center">
+      <div className="absolute top-20 -right-40 rounded-full bg-pink-400/30 blur-2xl md:h-96 md:w-96"></div>
+      <div className="absolute bottom-14 -left-40 rounded-full bg-blue-400/30 blur-2xl md:h-96 md:w-96"></div>
       <Header />
-      <h1 className="px-5 my-5 text-3xl font-semibold text-center text-white md:text-4xl">
+      <h1 className="my-5 px-5 text-center text-3xl font-semibold text-white md:text-4xl">
         Welcome to Inscribe
       </h1>
       <div
         onClick={() => connectWallet("injected")}
-        className="relative mt-5 group"
+        className="group relative mt-5"
       >
-        <div className="absolute rounded-lg opacity-75 -inset-1 bg-gradient-to-r from-pink-400 to-blue-400 filter group-hover:opacity-100 blur backdrop-blur-lg animate-tilt"></div>
+        <div className="absolute -inset-1 animate-tilt rounded-lg bg-gradient-to-r from-pink-400 to-blue-400 opacity-75 blur filter backdrop-blur-lg group-hover:opacity-100"></div>
 
-        <button className="relative flex items-center px-6 py-3 space-x-3 text-lg font-medium bg-black rounded-lg md:text-2xl">
+        <button className="relative flex items-center space-x-3 rounded-lg bg-black px-6 py-3 text-lg font-medium md:text-2xl">
           <Image
             width={50}
             height={50}

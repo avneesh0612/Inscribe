@@ -6,17 +6,17 @@ import HeroHome from "../components/HeroHome";
 
 const Home: FC = () => {
   return (
-    <div className="flex flex-col items-center w-screen min-h-screen">
+    <div className="flex min-h-screen w-screen flex-col items-center">
       <Header />
       <HeroHome />
 
-      <div className="relative flex flex-col items-center w-screen mt-14 md:mt-0">
-        <div className="absolute top-0 rounded-full mr-52 bg-pink-400/20 md:w-80 md:h-72 blur-2xl"></div>
-        <div className="absolute top-0 rounded-full ml-52 bg-blue-400/20 md:w-80 md:h-72 blur-2xl"></div>
-        <h1 className="z-30 mt-32 text-2xl font-bold text-white mt- md:text-5xl font-Ubuntu">
+      <div className="relative mt-14 flex w-screen flex-col items-center md:mt-0">
+        <div className="absolute top-0 mr-52 rounded-full bg-pink-400/20 blur-2xl md:h-72 md:w-80"></div>
+        <div className="absolute top-0 ml-52 rounded-full bg-blue-400/20 blur-2xl md:h-72 md:w-80"></div>
+        <h1 className="mt- z-30 mt-32 font-Ubuntu text-2xl font-bold text-white md:text-5xl">
           With Inscribe you can:
         </h1>
-        <div className="flex flex-wrap items-center justify-center w-full mt-20 space-y-5 md:space-x-10">
+        <div className="mt-20 flex w-full flex-wrap items-center justify-center space-y-5 md:space-x-10">
           <Feature
             icon="/images/INK.svg"
             description="Trade INK, our own crypto currency"

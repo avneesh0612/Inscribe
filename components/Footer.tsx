@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center w-screen p-10 mt-12 space-x-10 bg-black border-t-2 border-white/5">
+    <div className="mt-12 flex w-screen items-center justify-center space-x-10 border-t-2 border-white/5 bg-black p-10">
       <a
         href="https://discord.gg/UFfwQWY7eV"
         className="text-lg font-medium text-gray-100 hover:underline"
