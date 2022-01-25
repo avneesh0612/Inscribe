@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/avneesh0612/Inscribe/compare/v0.2.0...v1.1.0) (2022-01-25)
+
+
+### Features
+
+* release v1 ([c87dadf](https://github.com/avneesh0612/Inscribe/commit/c87dadf3e09238f1fdb65f7d9e79866415ce90ad))
+
+
+
 # [0.2.0](https://github.com/avneesh0612/Inscribe/compare/v0.1.0...v0.2.0) (2022-01-14)
 
 
