@@ -10,6 +10,9 @@
 
 > A DAO for Bloggers all around the world!
 
+![og-image](https://user-images.githubusercontent.com/76690419/150941762-ad5125be-5029-42e9-91b6-e16302107efc.png)
+
+
 ### 🏠 [Homepage](http://inscribedao.me/)
 
 ## Install
