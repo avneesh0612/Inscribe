@@ -29,10 +29,10 @@
     regenerator-runtime "^0.13.9"
     tiny-invariant "^1.2.0"
 
-"@3rdweb/sdk@^1.36.10":
-  version "1.36.10"
-  resolved "https://registry.yarnpkg.com/@3rdweb/sdk/-/sdk-1.36.10.tgz#f7e52931c225a1d4314102725aa6b0b82452b03b"
-  integrity sha512-rqY4TyluI1fzAaiUYaaaejiv505Udfp+W2KYjSZMs4KdDH9J4rgMigKiEF1EnVuj7u1tLGm0kfSCX59+IauifQ==
+"@3rdweb/sdk@^1.36.11":
+  version "1.36.11"
+  resolved "https://registry.yarnpkg.com/@3rdweb/sdk/-/sdk-1.36.11.tgz#dc4be584567c97c70b352bb5e9595b7141a9a9a3"
+  integrity sha512-zB4OcWsL57Nj8i1tXlrzkgQfFPF2+90wIJRKYFm7E0GWddJYSVPztDxFVSAbud8Hecbl4rGV1E+I26EiFRtN5w==
   dependencies:
     "@3rdweb/contracts" "^1.21.1"
     "@ethersproject/bignumber" "^5.5.0"
