@@ -1,6 +1,4 @@
 import { useWeb3 } from "@3rdweb/hooks";
-import { ethers } from "ethers";
-import Image from "next/image";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 import { Logo } from "./Icons";
@@ -9,7 +7,7 @@ interface Props {}
 
 const Header: FC<Props> = ({}) => {
   const [animateHeader, setAnimatedHeader] = useState(false);
-  const { address, balance } = useWeb3();
+  const { address } = useWeb3();
   const shortenAddress = (str: string) => {
     return str.substring(0, 4) + "..." + str.substring(str.length - 4);
   };
@@ -38,6 +36,8 @@ const Header: FC<Props> = ({}) => {
 
       <div className="ml-auto flex items-center space-x-4">
         <a
+          rel="noreferrer"
+          target="_blank"
           href="https://blog.avneesh.tech/inscribe"
           className="text-lg font-medium hover:underline"
         >
