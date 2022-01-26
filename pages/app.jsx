@@ -20,11 +20,11 @@ const tokenModule = sdk.getTokenModule(
 );
 
 const voteModule = sdk.getVoteModule(
-  "0x65C30844e5f263436EE6e88544cc24c5c0D1B1af"
+  "0xD1fB473C186b7a1273bAfC754C848B86C0386677"
 );
 
 const Home = () => {
-  const { address, provider, error } = useWeb3();
+  const { address, provider, error, connectWallet } = useWeb3();
   const signer = provider ? provider.getSigner() : undefined;
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
   const [isClaiming, setIsClaiming] = useState(false);
