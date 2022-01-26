@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/avneesh0612/Inscribe/compare/v1.2.0...v1.3.0) (2022-01-26)
+
+
+### Features
+
+* improve voting and members list ([21f28ea](https://github.com/avneesh0612/Inscribe/commit/21f28eaff0e39cf02b28f8e89f8ded1d9dbdbe5e))
+
+
+
 # [1.2.0](https://github.com/avneesh0612/Inscribe/compare/v1.1.0...v1.2.0) (2022-01-25)
 
 
