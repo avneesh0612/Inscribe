@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/index.tsx", "pages/app.jsx"  ],
+, "pages/index.tsx", "pages/app.jsx", "scripts/airdrop-token.js"  ],
   "exclude": [
     "node_modules"
   ]
