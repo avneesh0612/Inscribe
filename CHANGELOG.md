@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/avneesh0612/Inscribe/compare/v1.4.0...v1.5.0) (2022-01-27)
+
+
+### Features
+
+* improve NFT modal ([ee063a6](https://github.com/avneesh0612/Inscribe/commit/ee063a6e2a4f217ce43c64c9b5749732bf4c49a0))
+
+
+
 # [1.4.0](https://github.com/avneesh0612/Inscribe/compare/v1.3.1...v1.4.0) (2022-01-27)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add prettier tailwind plugin ([6e6795a](https://github.com/avneesh0612/Inscribe/commit/6e6795a38d9676c2b7af84414f8257f7783e8fd1))
-
-
-
-# [1.1.0](https://github.com/avneesh0612/Inscribe/compare/v0.2.0...v1.1.0) (2022-01-25)
-
-
-### Features
-
-* release v1 ([c87dadf](https://github.com/avneesh0612/Inscribe/commit/c87dadf3e09238f1fdb65f7d9e79866415ce90ad))
 
 
 
