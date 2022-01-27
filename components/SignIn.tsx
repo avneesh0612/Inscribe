@@ -1,8 +1,9 @@
 import { useWeb3 } from "@3rdweb/hooks";
 import Header from "./Header";
 import Image from "next/image";
+import { FC } from "react";
 
-const SignIn = () => {
+const SignIn: FC = () => {
   const { connectWallet } = useWeb3();
 
   return (

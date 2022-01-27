@@ -1,6 +1,8 @@
-const Footer = () => {
+import { FC } from "react";
+
+const Footer: FC = () => {
   return (
-    <div className="mt-12 flex w-screen items-center justify-center space-x-10 border-t-2 border-white/5 bg-black p-10">
+    <footer className="mt-12 flex w-screen items-center justify-center space-x-10 border-t-2 border-white/5 bg-black p-10">
       <a
         href="https://discord.gg/UFfwQWY7eV"
         rel="noreferrer"
@@ -17,7 +19,7 @@ const Footer = () => {
       >
         GitHub
       </a>
-    </div>
+    </footer>
   );
 };
 
