@@ -76,7 +76,7 @@ const Header: FC<Props> = ({}) => {
 
         {hasClaimedNFT && (
           <p
-            className="flex cursor-pointer flex-row items-center gap-x-2 rounded-full bg-slate-200 px-3 py-2 text-black/5 duration-100 hover:bg-slate-100"
+            className="hidden cursor-pointer flex-row items-center gap-x-2 rounded-full bg-slate-200 px-3 py-2 text-black/5 duration-100 hover:bg-slate-100 md:flex"
             onClick={() => isHidden(!hidden)}
           >
             <VerifiedIcon />
