@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/avneesh0612/Inscribe/compare/v1.3.1...v1.4.0) (2022-01-27)
+
+
+### Features
+
+* show nft via popup ([3a35aac](https://github.com/avneesh0612/Inscribe/commit/3a35aace519a642d0294e70be7949539df1687be))
+
+
+
 ## [1.3.1](https://github.com/avneesh0612/Inscribe/compare/v1.3.0...v1.3.1) (2022-01-26)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * release v1 ([c87dadf](https://github.com/avneesh0612/Inscribe/commit/c87dadf3e09238f1fdb65f7d9e79866415ce90ad))
-
-
-
-# [0.2.0](https://github.com/avneesh0612/Inscribe/compare/v0.1.0...v0.2.0) (2022-01-14)
-
-
-### Features
-
-* improve the UI ([d0fd8dc](https://github.com/avneesh0612/Inscribe/commit/d0fd8dcde9c157bdde93f5b50d60931db9a83703))
 
 
 
