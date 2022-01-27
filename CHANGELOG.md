@@ -1,3 +1,12 @@
+## [1.5.2](https://github.com/avneesh0612/Inscribe/compare/v1.5.1...v1.5.2) (2022-01-27)
+
+
+### Bug Fixes
+
+* links ([015bf04](https://github.com/avneesh0612/Inscribe/commit/015bf04c4871a2274aa61b52906b78c931243904))
+
+
+
 ## [1.5.1](https://github.com/avneesh0612/Inscribe/compare/v1.5.0...v1.5.1) (2022-01-27)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * made links open in new tab ([7518ed4](https://github.com/avneesh0612/Inscribe/commit/7518ed4ca96c287806c98825217d4a39af9a0e6a))
-
-
-
-# [1.3.0](https://github.com/avneesh0612/Inscribe/compare/v1.2.0...v1.3.0) (2022-01-26)
-
-
-### Features
-
-* improve voting and members list ([21f28ea](https://github.com/avneesh0612/Inscribe/commit/21f28eaff0e39cf02b28f8e89f8ded1d9dbdbe5e))
 
 
 
