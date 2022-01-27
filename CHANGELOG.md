@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/avneesh0612/Inscribe/compare/v1.5.0...v1.5.1) (2022-01-27)
+
+
+### Bug Fixes
+
+* make header reponsive ([3e27d53](https://github.com/avneesh0612/Inscribe/commit/3e27d5396955a2766f9c87d5d795e7197127be37))
+
+
+
 # [1.5.0](https://github.com/avneesh0612/Inscribe/compare/v1.4.0...v1.5.0) (2022-01-27)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * improve voting and members list ([21f28ea](https://github.com/avneesh0612/Inscribe/commit/21f28eaff0e39cf02b28f8e89f8ded1d9dbdbe5e))
-
-
-
-# [1.2.0](https://github.com/avneesh0612/Inscribe/compare/v1.1.0...v1.2.0) (2022-01-25)
-
-
-### Features
-
-* add prettier tailwind plugin ([6e6795a](https://github.com/avneesh0612/Inscribe/commit/6e6795a38d9676c2b7af84414f8257f7783e8fd1))
 
 
 
