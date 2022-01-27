@@ -68,7 +68,7 @@ const Header: FC<Props> = ({}) => {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://blog.avneesh.tech/inscribe"
+          href="https://blog.avneesh.tech/how-i-built-inscribe-bloggers-dao"
           className="text-lg font-medium hover:underline"
         >
           About

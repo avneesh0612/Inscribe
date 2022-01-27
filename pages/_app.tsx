@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import NextNProgress from "nextjs-progressbar";
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 import { NextSeo } from "next-seo";
+import Script from "next/script";
 
 const supportedChainIds = [4];
 
@@ -16,6 +17,20 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       connectors={connectors}
       supportedChainIds={supportedChainIds}
     >
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script id="google-analytics" strategy="lazyOnload">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+                `}
+      </Script>
       <NextSeo
         title="Inscribe"
         titleTemplate="Inscribe"
