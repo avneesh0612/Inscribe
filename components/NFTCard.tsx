@@ -25,13 +25,19 @@ const NFTCard: FC<Props> = ({ hidden }) => {
         </p>
         <div className="flex w-full items-center justify-between px-4">
           <a
-            className="relative grid h-12 w-12 place-items-center rounded-full bg-gray-400"
+            className="relative grid h-12 w-12 place-items-center rounded-full bg-gray-200"
+            target="_blank"
+            rel="noreferrer"
             href="https://ethereum.org/"
           >
             <EthereumIcon className="h-9 w-6" />
           </a>
 
-          <a href="https://testnets.opensea.io/0x2e2040BB43ba63AE7E055f28C3F61F2eb9e7B6d4/0">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://testnets.opensea.io/assets/0x2e2040BB43ba63AE7E055f28C3F61F2eb9e7B6d4/0"
+          >
             <Image
               width={150}
               height={35}
