@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { EthereumIcon, InscribeIcon } from "./Icons";
+import { FC } from "react";
 
-const NFTCard = () => {
+const NFTCard: FC = () => {
   return (
     <div className="flex items-center justify-center space-x-4 rounded-lg bg-white p-3 shadow-xl">
       <InscribeIcon className="h-32 w-32" />

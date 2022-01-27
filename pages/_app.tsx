@@ -10,7 +10,7 @@ const connectors = {
   injected: {},
 };
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThirdwebWeb3Provider
       connectors={connectors}
@@ -51,6 +51,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </ThirdwebWeb3Provider>
   );
-}
+};
 
 export default MyApp;
