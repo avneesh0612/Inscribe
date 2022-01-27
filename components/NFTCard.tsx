@@ -1,9 +1,18 @@
 import Image from "next/image";
 import { EthereumIcon, InscribeIcon } from "./Icons";
+import { FC } from "react";
 
-const NFTCard = () => {
+interface props {
+  hidden: boolean;
+}
+
+const NFTCard: FC<props> = ({ hidden }) => {
   return (
-    <div className="flex items-center justify-center space-x-4 rounded-lg bg-white p-3 shadow-xl">
+    <div
+      className={`fixed top-20 right-0 z-50 flex items-center justify-center space-x-4 rounded-lg bg-white p-3 shadow-xl ${
+        hidden && "hidden"
+      }`}
+    >
       <InscribeIcon className="h-32 w-32" />
       <div>
         <h2 className="text-3xl font-bold text-black ">
@@ -17,7 +26,7 @@ const NFTCard = () => {
         </p>
         <div className="flex w-full items-center justify-between px-4">
           <a
-            className="relative h-14 w-14 rounded-full bg-gray-400"
+            className="relative grid h-14 w-14 place-items-center rounded-full bg-gray-400"
             href="https://ethereum.org/"
           >
             <EthereumIcon className="h-11 w-8 " />

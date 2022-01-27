@@ -1,12 +1,15 @@
 import { useWeb3 } from "@3rdweb/hooks";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
-import { Logo } from "./Icons";
+import { Logo, VerifiedIcon } from "./Icons";
+import NFTCard from "./NFTCard";
 
 interface Props {}
 
 const Header: FC<Props> = ({}) => {
   const [animateHeader, setAnimatedHeader] = useState(false);
+  const [hidden, isHidden] = useState<boolean>(true);
+
   const { address } = useWeb3();
   const shortenAddress = (str: string) => {
     return str.substring(0, 4) + "..." + str.substring(str.length - 4);
@@ -48,13 +51,21 @@ const Header: FC<Props> = ({}) => {
             {shortenAddress(address)}
           </p>
         )}
-      </div>
 
+        <p
+          className="flex cursor-pointer flex-row items-center gap-x-2 rounded-full bg-slate-200 px-3 py-2 text-black/5 duration-100 hover:bg-slate-100"
+          onClick={() => isHidden(!hidden)}
+        >
+          <VerifiedIcon />
+          <span className="font-medium text-black">Early Access</span>
+        </p>
+      </div>
       <Link href="/app">
         <a className="ml-4 rounded-full border-2 border-slate-300 px-8 py-2 text-lg font-medium md:ml-20">
           App
         </a>
       </Link>
+      <NFTCard hidden={hidden} />
     </nav>
   );
 };
