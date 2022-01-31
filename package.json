@@ -18,7 +18,6 @@
   "dependencies": {
     "@3rdweb/hooks": "^1.8.0",
     "@3rdweb/sdk": "^1.36.11",
-    "@supabase/supabase-js": "^1.29.4",
     "dotenv": "^14.3.2",
     "ethers": "^5.5.3",
     "next": "latest",
